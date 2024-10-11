@@ -27,7 +27,6 @@ def scan_file(file_content, filename):
         'file': (filename, file_content),
         'file_name': (None, filename)
     }
-    #files = {'file': (filename, file_content)}
     headers = {'X-API-Key': API_KEY, 'Accept': '*/*'}
     
     response = requests.post(VERISYS_API_URL, headers=headers, files=files)
